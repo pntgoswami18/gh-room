@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GitHub Room</title>
+    <link rel="stylesheet" href="/src/style.css" />
+  </head>
+  <body>
+    <canvas id="scene"></canvas>
+    <div id="loader">loading room…</div>
+    <div id="tooltip"></div>
+    <div id="hint">drag to look around · click things</div>
+    <div id="modal" aria-hidden="true">
+      <div class="modal-card" role="dialog">
+        <button class="modal-close" aria-label="Close">×</button>
+        <div class="modal-body"></div>
+      </div>
+    </div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

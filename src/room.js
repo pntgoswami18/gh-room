@@ -26,9 +26,11 @@ export function buildPlaceholderRoom() {
   // desk + monitor on back wall
   add(box(2.2, 0.08, 0.9, '#b98b64'), 0.8, 1.0, -2.5);
   for (const [lx, lz] of [[-1, -1], [1, -1], [-1, 1], [1, 1]]) add(box(0.06, 1, 0.06, '#8b6447'), 0.8 + lx * 1.0, 0.5, -2.5 + lz * 0.38);
-  add(box(1.3, 0.8, 0.06, '#2b2b33'), 0.8, 1.6, -2.78);
-  add(box(0.1, 0.18, 0.06, '#2b2b33'), 0.8, 1.11, -2.78);
-  const screen = add(plane(1.22, 0.69), 0.8, 1.6, -2.745);
+  // monitor: 1.4x the original size (bezel 1.82 x 1.12, screen 1.708 x 0.966)
+  add(box(1.82, 1.12, 0.06, '#2b2b33'), 0.8, 1.76, -2.78);
+  add(box(0.12, 0.16, 0.06, '#2b2b33'), 0.8, 1.12, -2.78);
+  add(box(0.5, 0.03, 0.3, '#2b2b33'), 0.8, 1.055, -2.7);
+  const screen = add(plane(1.708, 0.966), 0.8, 1.76, -2.745);
 
   // chair
   add(box(0.6, 0.06, 0.6, '#f4a6a6'), 0.8, 0.55, -1.7);
